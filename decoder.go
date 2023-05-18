@@ -540,7 +540,7 @@ func (d *Decoder) decodeBandwidth(m *Message) error {
 		n int
 	)
 	switch bandWidthType := BandwidthType(k); bandWidthType {
-	case BandwidthApplicationSpecific, BandwidthConferenceTotal, BandwidthApplicationSpecificTransportIndependent:
+	case BandwidthApplicationSpecific, BandwidthConferenceTotal, BandwidthApplicationSpecificTransportIndependent, BandwidthRTCPSender, BandwidthRTCPReceivers:
 		t = bandWidthType
 	default:
 		msg := fmt.Sprintf("bad bandwidth type %s", k)

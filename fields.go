@@ -391,6 +391,9 @@ const (
 	BandwidthApplicationSpecific BandwidthType = "AS"
 	// defined in RFC 3890
 	BandwidthApplicationSpecificTransportIndependent BandwidthType = "TIAS"
+	// defined in RFC 3556
+	BandwidthRTCPSender    BandwidthType = "RS"
+	BandwidthRTCPReceivers BandwidthType = "RR"
 )
 
 // AddBandwidth appends Bandwidth field to Session.
